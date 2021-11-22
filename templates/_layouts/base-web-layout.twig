@@ -1,0 +1,35 @@
+{% minify %}
+
+{% extends '_layouts/_global-variables' %}
+
+{% block htmlPage %}
+  <!DOCTYPE html>
+  <html lang="{{ craft.app.language|slice(0, 2) }}">
+    <head>
+      {% include '_layouts/_global-head' %}
+      {% block customHead %}
+
+      {% endblock %}
+    </head>
+    <body>
+      {% include 'components/_header' %}
+
+      {% block main %}
+        <main>
+          {% block content %}
+
+          {% endblock %}
+        </main>
+      {% endblock %}
+
+      {% include 'components/_footer' %}
+
+      {% block modals %}
+
+      {% endblock %}
+
+      {% include 'components/_load-js' %}
+    </body>
+  </html>
+{% endblock %}
+{% endminify %}

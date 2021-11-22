@@ -1,0 +1,39 @@
+:root {
+  --black: #151515;
+  --white: #fff;
+  --light-grey: #ebebeb;
+  --dusk-blue: #2b568e;
+  --gray: #939598;
+}
+
+%roboto-font {
+  font-family: "Roboto";
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.btn-black,
+.btn-white,
+.btn-gray {
+  border-radius: 0px;
+  border: 0px;
+  font-size: 14px;
+  font-weight: 900;
+  &,
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.btn-black {
+  background-color: var(--black);
+}
+
+.btn-white {
+  background-color: var(--white);
+}
+
+.btn-gray {
+  background-color: var(--gray);
+}

@@ -1,0 +1,15 @@
+{% spaceless %}
+  {% cache for 4 weeks %}
+  <script type="text/javascript">
+    {{ source('_inline-js/_lazyload-image-shim.js') }}
+  </script>
+  {% endcache %}
+
+  <script type="text/javascript"
+    src="{{ mix('js/manifest.js') }}"
+    async></script>
+  <script type="text/javascript" src="{{ mix('js/vendor.js') }}" async></script>
+  <script type="text/javascript"
+    src="{{ mix('js/app.min.js') }}"
+    async></script>
+{% endspaceless %}

@@ -1,0 +1,42 @@
+@use "./variables";
+
+* {
+  box-sizing: border-box;
+  &:focus {
+    box-shadow: 0 0 0 0 !important;
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+}
+
+ul {
+  list-style: none !important;
+}
+
+a,
+a:focus,
+a:hover {
+  outline: none;
+  text-decoration: none !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+  background-color: var(--white);
+  letter-spacing: 0.5px;
+  @extend %roboto-font;
+}
+
+footer {
+  margin-top: auto;
+}

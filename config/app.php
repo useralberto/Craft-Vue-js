@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yii Application Config
  *
@@ -20,9 +21,35 @@
 use craft\helpers\App;
 
 return [
-    'id' => App::env('APP_ID') ?: 'CraftCMS',
-    'modules' => [
-        'my-module' => \modules\Module::class,
+  "id" => App::env("APP_ID") ?: "CraftCMS",
+  "modules" => [
+    "my-module" => \modules\Module::class,
+  ],
+  "components" => [
+    "cache" => [
+      "class" => yii\redis\Cache::class,
+      "keyPrefix" => App::env("APP_ID") ?: "CraftCMS",
+      "redis" => [
+        "hostname" => App::env("REDIS_HOSTNAME"),
+        "port" => App::env("REDIS_PORT"),
+        "database" => App::env("REDIS_CRAFT_DB"),
+      ],
     ],
-    //'bootstrap' => ['my-module'],
+    "deprecator" => [
+      "throwExceptions" => App::env("DEV_MODE"),
+    ],
+    "queue" => [
+      "class" => yii\queue\redis\Queue::class,
+      "redis" => "redis",
+      "channel" => "queue",
+      "ttr" => 10 * 60,
+    ],
+    "redis" => [
+      "class" => yii\redis\Connection::class,
+      "hostname" => App::env("REDIS_HOSTNAME"),
+      "port" => App::env("REDIS_PORT"),
+      "database" => App::env("REDIS_DEFAULT_DB"),
+    ],
+  ],
+  //'bootstrap' => ['my-module'],
 ];

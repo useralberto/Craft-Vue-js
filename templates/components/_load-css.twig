@@ -1,0 +1,21 @@
+{% spaceless %}
+  {% cache for 4 weeks %}
+  <link rel="preload"
+    href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    as="style" />
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  {% endcache %}
+
+  <link rel="preload" href="{{ mix('css/app.css') }}" as="style" />
+  <noscript>
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
+  </noscript>
+
+  {{ craft.mix.withTag('css/app.css')|raw }}
+
+  {% cache for 4 weeks %}
+  {% include '_inline-css/_fonts' %}
+  {% include '_inline-css/_layout' %}
+  {% endcache %}
+{% endspaceless %}

@@ -1,0 +1,26 @@
+{% set logos = logos.fieldIcon is defined and logos.fieldIcon.count() > 0
+  ? logos.fieldIcon.one()
+  : {
+    url: 'https://craftcms.com/dist/images/siteicons/apple-touch-icon-77c98c4873.png'
+  }
+%}
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed"
+  sizes="120x120"
+  href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ logos.url }}" />
+<link rel="apple-touch-icon-precomposed"
+  sizes="152x152"
+  href="{{ logos.url }}" />
+<link rel="icon" type="image/png" href="{{ logos.url }}" sizes="196x196" />
+<link rel="icon" type="image/png" href="{{ logos.url }}" sizes="96x96" />
+<link rel="icon" type="image/png" href="{{ logos.url }}" sizes="128x128" />
