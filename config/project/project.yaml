@@ -1,0 +1,22 @@
+dateModified: 1637552466
+email:
+  fromEmail: admin@dev.com
+  fromName: 'Craft Vue js'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    6b4d095a-f1a1-4726-ad03-9d41429d34ee: 'Craft Vue js' # Craft Vue js
+    469b94cb-0c05-4b9f-a69d-367154f84cf8: 'Craft Vue js' # Craft Vue js
+    c69d50f9-af27-4b15-9582-f02b8ae0f2b6: Common # Common
+system:
+  edition: solo
+  live: true
+  name: 'Craft Vue js'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

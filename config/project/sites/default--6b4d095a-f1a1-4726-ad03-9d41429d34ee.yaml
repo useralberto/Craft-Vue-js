@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Craft Vue js'
+primary: true
+siteGroup: 469b94cb-0c05-4b9f-a69d-367154f84cf8 # Craft Vue js
+sortOrder: 1
