@@ -1,2 +1,2 @@
 # Craft-Vue-js
-Craft cms with vue h\js
+Craft cms with vue js
