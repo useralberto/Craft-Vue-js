@@ -12,17 +12,13 @@
       {% endblock %}
     </head>
     <body>
-      {% include 'components/_header' %}
-
       {% block main %}
-        <main>
+        <main id="app">
           {% block content %}
 
           {% endblock %}
         </main>
       {% endblock %}
-
-      {% include 'components/_footer' %}
 
       {% block modals %}
 
