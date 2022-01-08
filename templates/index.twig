@@ -11,7 +11,17 @@
 {# {% endblock %} #}
 
 {% block content %}
-  <header-components></header-components>
-  <div class="container"></div>
+  {% include 'components/_header' only %}
+
+  {% if entry is defined %}
+    {% if entry.components is defined and entry.components.count() > 0 %}
+      {% for i in entry.components.all() %}
+        {% include 'components/_' ~ i.type with {
+          component: i
+        } only %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+
   <footer-components></footer-components>
 {% endblock %}

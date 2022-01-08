@@ -2,10 +2,10 @@
   <header>
     <article class="container">
       <nav class="navbar">
-        <a class="navbar-brand" href="#">CraftVue</a>
-        <ul class="navbar-menu ms-auto">
+        <a class="navbar-brand" :href="siteUrl">CraftVue</a>
+        <ul class="navbar-menu p-0 mx-auto mx-lg-0 ms-lg-auto">
           <li
-            v-for="(i, index) in data.menu"
+            v-for="(i, index) in menu"
             :key="'element-' + index"
             :class="{ 'ms-4': index !== 0 }"
           >
@@ -21,28 +21,13 @@
 
 <script>
 export default {
+  props: {
+    siteUrl: String,
+    menu: Array,
+  },
   data() {
     return {
-      data: {
-        menu: [
-          {
-            url: "http://mysite.test/",
-            title: "Home",
-          },
-          {
-            url: "#",
-            title: "Aboutus",
-          },
-          {
-            url: "#",
-            title: "Blog",
-          },
-          {
-            url: "#",
-            title: "Contacts",
-          },
-        ],
-      },
+      data: {},
     };
   },
 };

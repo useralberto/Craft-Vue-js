@@ -1,19 +1,37 @@
-dateModified: 1637610861
+dateModified: 1638303616
 email:
   fromEmail: admin@dev.com
   fromName: 'Craft Vue js'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    5cb3d4ef-c06b-4a8c-9545-ec97609f0c23: TextAndImage # TextAndImage
+    4b0f1940-5a51-456a-a91d-593a96ad1015: 'Image Large' # Image Large
     6b4d095a-f1a1-4726-ad03-9d41429d34ee: 'Craft Vue js' # Craft Vue js
-    8d591ee8-4623-40cd-8f29-80ea85587347: Init # Init
+    6b23fb97-48db-4fde-b2c8-9913c49be20a: 'Public Schema' # Public Schema
     9db46ed5-608d-483d-b611-0d6a0d24553e: Home # Home
+    9ffe8dee-b6cb-4cec-8c69-6917ce97eb33: Button # Button
+    35b25861-fb4f-4caf-b949-0ae712741d1b: Title # Title
     36e7dd32-e013-4b60-9790-dd47b98630b8: components # components
+    90d802d5-a7a9-46e0-bb00-4d170219a810: 'Head Title' # Head Title
+    308bdd6c-50e2-45ef-8894-4c53402869fe: 'Image Medium' # Image Medium
+    378cdaf1-b94b-44c4-a6d5-bf4f5ca51e13: 'Field Image' # Field Image
     469b94cb-0c05-4b9f-a69d-367154f84cf8: 'Craft Vue js' # Craft Vue js
-    c69d50f9-af27-4b15-9582-f02b8ae0f2b6: Common # Common
+    7013b86b-c0ff-4621-bf92-064ef8245c62: Menu # Menu
+    07195c4c-8b9a-4840-921f-e9db97f4b392: Uploads # Uploads
+    412041fc-f1c3-4f3d-aea0-b562a735fcc3: 'Image HD' # Image HD
+    47695588-893a-4be5-8527-4644a55efcc5: 'Field Link Simple' # Field Link Simple
+    a7be8e0b-5d18-475d-ab80-b498828440bc: 'Image Small' # Image Small
+    be09fd4a-4aaa-46ec-902f-560b83240bca: 'Field Redactor' # Field Redactor
+    c4a534b7-8c99-461e-8974-6b1e1079e363: Blog # Blog
+    c69d50f9-af27-4b15-9582-f02b8ae0f2b6: Default # Default
+    c71c794c-b2d3-4a7e-a62b-73da0c3239c2: 'Master Head' # Master Head
+    d45add31-0f09-4bf1-8b9f-776313b4fcd3: Blog # Blog
     e627f988-2849-4617-83ba-2e8ee7e3d46a: Title # Title
     eb2a58f7-043d-4b4c-be39-6fb99ff14066: Text # Text
+    ee188d50-1b42-4d85-a7d3-40f1c095c901: Menu # Menu
+    f62afe2c-cf80-4e52-a74c-64d032323ab0: Post # Post
+    f6599992-c1aa-48e1-9e48-eaeb5f406700: 'Backgroud Image' # Backgroud Image
+    fac67b9d-2872-488e-86b5-862d3f426f8d: 'Blog Posts' # Blog Posts
     feaa025c-e24b-41d0-8886-38608c16eb0f: Home # Home
 plugins:
   element-api:
@@ -35,6 +53,10 @@ plugins:
     settings:
       assetPath: /assets/
       publicPath: web
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   super-table:
     edition: standard
     enabled: true

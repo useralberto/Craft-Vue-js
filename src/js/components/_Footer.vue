@@ -1,7 +1,7 @@
 <template>
   <footer>
     <article class="container">
-      © 2021 CraftVue | Multipurpose Theme design by @useralberto
+      © 2021 CraftVue | Multipurpose Theme design
     </article>
   </footer>
 </template>

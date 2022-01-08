@@ -1,0 +1,14 @@
+{% set img = component.backgroudImage.one() %}
+{% set data = {
+  headTitle: component.headTitle,
+  title: component.masterTitle,
+  img: {
+    hd: img.getUrl('imageHd'),
+    large: img.getUrl('imageLarge'),
+    medium: img.getUrl('imageMedium'),
+    small: img.getUrl('imageSmall'),
+    normal: img.getUrl()
+  }
+} %}
+
+<masterhead-component :data="{{ data|json_encode }}"></masterhead-component>

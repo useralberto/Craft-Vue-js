@@ -1,13 +1,13 @@
 {
   "require": {
-    "craftcms/cms": "^3.6.4",
+    "craftcms/cms": "3.7.23",
     "craftcms/element-api": "^2.8",
     "craftcms/redactor": "2.8.8",
     "craftsnippets/craft-image-toolbox": "^1.1",
     "misterbk/mix": "^1.5",
     "nystudio107/craft-minify": "^1.2",
     "sebastianlenz/linkfield": "^1.0",
-    "verbb/super-table": "^2.6",
+    "verbb/super-table": "2.7.0",
     "vlucas/phpdotenv": "^3.4.0",
     "yiisoft/yii2-redis": "^2.0"
   },
